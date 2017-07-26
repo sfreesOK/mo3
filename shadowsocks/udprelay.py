@@ -359,6 +359,7 @@ class UDPRelay(object):
                 traceback.print_exc()
                 logging.debug('UDP handle_server: decrypt data failed')
                 return
+            
             # decrypt data
             if not data:
                 logging.debug('UDP handle_server: data is empty after decrypt')
