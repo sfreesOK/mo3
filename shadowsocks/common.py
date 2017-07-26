@@ -23,6 +23,8 @@ import struct
 import logging
 import binascii
 import re
+import random
+
 
 from shadowsocks import lru_cache
 
@@ -58,6 +60,18 @@ def to_str(s):
             return s.decode('utf-8')
     return s
 
+<<<<<<< HEAD
+=======
+def random_base64_str(randomlength = 8):
+    str = ''
+    chars = 'ABCDEF0123456789'
+    length = len(chars) - 1
+    for i in range(randomlength):
+        str += chars[random.randint(0, length)]
+    return str
+
+
+>>>>>>> a4123a8... add simple-obfs http
 def int32(x):
     if x > 0xFFFFFFFF or x < 0:
         x &= 0xFFFFFFFF
