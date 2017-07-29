@@ -60,8 +60,6 @@ def to_str(s):
             return s.decode('utf-8')
     return s
 
-<<<<<<< HEAD
-=======
 def random_base64_str(randomlength = 8):
     str = ''
     chars = 'ABCDEF0123456789'
@@ -70,8 +68,6 @@ def random_base64_str(randomlength = 8):
         str += chars[random.randint(0, length)]
     return str
 
-
->>>>>>> a4123a8... add simple-obfs http
 def int32(x):
     if x > 0xFFFFFFFF or x < 0:
         x &= 0xFFFFFFFF
