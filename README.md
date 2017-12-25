@@ -1,6 +1,11 @@
 ShadowsocksR
 ===========
 
+如要使用 Aead 和 ss obfs，
+使用 aead ，加密方式设置为 aead 支持的方式即可。
+使用 ss obfs，混淆方式设置为 simple_obfs_http 或 simple_obfs_tls。
+其他和 SSR 的设置方法一样。
+
 [![Build Status]][Travis CI]
 
 A fast tunnel proxy that helps you bypass firewalls.
